@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object-fit</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        .container{
+            width: 70%;
+            margin: 0 auto;
+
+        }
+        .clearfix{
+            clear: both;
+        }
+        .box{
+            width: 32%;
+            border: 2px solid rgb(197, 116, 116);
+            float: left;
+            box-sizing: border-box;
+            padding: 10px;
+            margin-right: 2%;
+            margin-bottom: 13px;
+
+        }
+        .box img{
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            object-position: left;
+        }
+        .last{
+            margin-right: 0;
+        }
+        @media screen and (max-width: 950px;){
+            .box{
+                width: 48%;
+            }
+        }
+        @media screen and (max-width: 800px;){
+            .box{
+                width: 100%;  
+        }
+        }
+    </style>
+</head>
+<body>
+    <h1 style="margin-bottom: 30px;">object-clip</h1>
+    <div class="container">
+        <div class="box">
+            <img src="https://picsum.photos/id/237/200/300" alt="">
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae incidunt hic sequi vero sapiente, voluptates corporis, optio repellendus, asperiores ducimus nostrum enim ullam doloribus facilis quo quis culpa ex dolor.</p>
+        </div>
+        <div class="box">
+            <img src="https://picsum.photos/seed/picsum/200/300" alt="">
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus blanditiis, facilis dolore nam sint iste rem dolorum? Sed labore nulla, magnam repellat cum ipsam eos odit exercitationem rem dolores molestiae.</p>
+
+        </div>
+        <div class="box last">
+            <img src="https://picsum.photos/200/300.jpg" alt="">
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, provident, deleniti maxime sapiente porro veritatis molestias dolor corporis possimus nisi accusantium architecto harum voluptate. Eligendi mollitia sunt explicabo est autem.</p>
+
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    
+</body>
+</html>
